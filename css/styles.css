@@ -240,7 +240,6 @@ section#categories {
 section#gallery {
     max-width: 100%;
     max-height: 100%;
-    /*background:  #707177;*/
     background: #484646;
 }
 .gallery {
@@ -260,10 +259,6 @@ section#gallery {
     max-width: 100%;
     max-height: 100%;
     background:  #333438;
-   /* margin-bottom: 15px;
-    margin-top: 15px;
-     max-height: 277px;
-    max-width: 445px; */
 }
 .gallery a img {
     width: 100%;
@@ -291,7 +286,7 @@ section#workers {
     min-height: 650px;
 }
 .workers{
-    margin-top:203px;
+    margin-top:115px;
     position: relative;
 }
 
@@ -302,16 +297,7 @@ section#workers {
     position: absolute;
     top: 0;
 }
-.owl-theme .owl-controls .owl-buttons div.owl-prev{
-   
-}
-.owl-theme .owl-controls .owl-buttons div.owl-next{
-    
-}
 
-.owl__item {
-    
-}
 .workers-slider {
     display: none;
     position: relative;
