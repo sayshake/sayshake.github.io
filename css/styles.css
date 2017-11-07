@@ -286,13 +286,10 @@ section#workers {
     min-height: 650px;
 }
 .workers{
-    margin-top:115px;
+    margin-top: 115px;
     position: relative;
 }
 
-.slick-carousel{
-    
-}
 .owl-theme .owl-controls .owl-buttons div{
     position: absolute;
     top: 0;
