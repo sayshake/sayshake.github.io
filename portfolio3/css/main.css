@@ -26,7 +26,7 @@ li {
 
 p {
     font-size: 14px;
-    font-family: helveticaneuecyrthin;
+    font-family: 'helveticaneuecyrthin';
     color: #484848;
     font-size: 14px;
     text-align: left;
@@ -130,14 +130,14 @@ section {
 }
 
 .breadcrumbs__title {
-    font-family: helveticaneuecyrmedium;
+    font-family: 'helveticaneuecyrmedium';
     color: #4b4b4b;
     font-size: 64px;
     margin: 0;
 }
 
 .breadcrumbs__subtitle {
-    font-family: helveticaneuecyrroman;
+    font-family: 'helveticaneuecyrroman';
     color: #4b4b4b;
     font-size: 25px;
     font-weight: 300;
@@ -237,7 +237,7 @@ main {
     color: #484848;
     font-size: 23px;
     font-weight: 300;
-    font-family: helveticaneuecyrmedium;
+    font-family: 'helveticaneuecyrmedium';
 }
 
 .section1__subtitle-text {
@@ -261,7 +261,7 @@ main {
 }
 
 .img__notation {
-    font-family: HelveticaNeueCyr;
+    font-family: 'HelveticaNeueCyr';
     color: #a6a6a6;
     font-size: 18px;
     /* Приближение из-за подстановки шрифтов */
@@ -288,7 +288,7 @@ main {
     position: relative;
     margin: 15px 20px 10px 10px;
     font-size: 14px;
-    font-family: helveticaneuecyrroman;
+    font-family: 'helveticaneuecyrroman';
     font-weight: 400;
 }
 
@@ -405,7 +405,7 @@ main {
     color: #484848;
     font-size: 20px;
     font-weight: 300;
-    font-family: helveticaneuecyrmedium;
+    font-family: 'helveticaneuecyrmedium';
 }
 
 .section2__subtitle-text,
