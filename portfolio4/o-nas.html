@@ -4,42 +4,128 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <title>o  nas</title>
   </head>
   <body>
     <div class="page-wrap">
-      <section class="header--dynamic">
-        <div class="container-md">
-          <div class="header__row">
-            <div class="header__menu">
-              <nav class="nav">
-                <li class="dropdown"><a class="nav__link" href="javascript:void(0)">Меню<span class="caret"></span></a>
-                  <div class="dropdown-content"><a class="dropdown__link" href="../obchee-menu.html">Общее меню</a><a class="dropdown__link" href="../sportivnoe-menu.html">Спортивный рацион</a><a class="dropdown__link" href="../zdorovoe-menu.html">Меню здорового питания</a></div>
-                </li><a class="nav__link" href="../kak-eto-rabotaet.html">Как это работает</a>
-                <li class="dropdown"><a class="nav__link" href="javascript:void(0)">о нас<span class="caret"></span></a>
-                  <div class="dropdown-content"><a class="dropdown__link" href="../o-nas.html">О нас </a><a class="dropdown__link" href="../otzyvy.html">Отзывы  </a></div>
-                </li><a class="nav__link" href="../blog.html">блог</a><a class="nav__link" href="../kontakty.html">Контакты</a>
-              </nav>
+      <div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">Оставьте ваши контактные данные и мы вам перезвоним!</div>
+              <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true">     </i></button>
             </div>
-            <div class="header__phone">
-              <div class="phone"><span class="phone__number">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="javascript:void(0)">Обратный звонок</a></div>
+            <div class="modal-body">
+              <form>
+                <div class="modal-container">
+                  <div class="modal-container__element"><span class="input">
+                      <label class="input__label"><i>  *</i>  Представьтесь</label>
+                      <input class="input__texted" type="text" name="name" placeholder="представьтесь" tabindex="1" required></span></div>
+                  <div class="modal-container__element"><span class="input">
+                      <label class="input__label"> <i>  *</i>  Ваш телефон</label>
+                      <input class="input__texted" type="tel" name="phone" placeholder="ваш телефон" tabindex="2" required></span></div>
+                  <div class="modal-container__element">   <span class="input">
+                      <label class="input__label">Ваш email</label>
+                      <input class="input__texted" type="email" name="email" placeholder="ваш email" tabindex="3" required></span></div>
+                  <div class="modal-container__element">   <span class="input">
+                      <label class="input__label">Комментарий</label>
+                      <textarea class="input__texted input__texted--textarea" type="text"></textarea></span></div>
+                </div>
+              </form><a class="button button--red button--text-uppercase" href="#">перезвоните мне</a>
             </div>
-            <div class="header__logo">   <a class="logo" href="../index.html"><span class="logo__picture"></span></a></div>
           </div>
         </div>
-      </section>
-      <section class="promo promo--adv-5">
-        <div class="container-xs">
-          <div class="promo__inner">
-            <div class="promo__text">   <span class="promo__name">IRONCHEF</span>
-              <p class="promo__info"> </p>Не нужно считать калории, бегать по магазинам, готовить еду <br>Осталось только выбрать!
+      </div>
+      <div class="modal fade" id="modal-answer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">Спасибо</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times      </span></button>
             </div>
-          </div><a class="button button--red button--text-uppercase" href="../obchee-menu.html">смотреть меню</a>
+            <div class="modal-body">
+              <form>
+                <div class="modal-container">
+                  <div class="edit-area">
+                    <p>Мы Вам перезвоним </p>
+                  </div>
+                </div>
+              </form><a class="button button--red button--text-uppercase" href="#" data-dismiss="modal">закрыть                </a>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+      <div class="page-content">
+        <section class="header--dynamic">
+          <div class="container-md">
+            <div class="header__row">
+              <div class="header__menu">
+                <nav class="nav">
+                  <li class="dropdown"><a class="nav__link" href="javascript:void(0)">Меню<span class="caret"></span></a>
+                    <div class="dropdown-content"><a class="dropdown__link" href="../obchee-menu.html">Общее меню</a><a class="dropdown__link" href="../sportivnoe-menu.html">Спортивный рацион</a><a class="dropdown__link" href="../zdorovoe-menu.html">Меню здорового питания</a></div>
+                  </li><a class="nav__link" href="../kak-eto-rabotaet.html">Как это работает</a>
+                  <li class="dropdown"><a class="nav__link" href="javascript:void(0)">о нас<span class="caret"></span></a>
+                    <div class="dropdown-content"><a class="dropdown__link" href="../o-nas.html">О нас </a><a class="dropdown__link" href="../otzyvy.html">Отзывы  </a></div>
+                  </li><a class="nav__link" href="../blog.html">блог</a><a class="nav__link" href="../kontakty.html">Контакты</a>
+                </nav>
+              </div>
+              <div class="header__phone">
+                <div class="phone"><span class="phone__number">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#" data-toggle="modal" data-target="#modal-order">Обратный звонок</a></div>
+              </div>
+              <div class="header__logo">   <a class="logo" href="../index.html"><span class="logo__picture"></span></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="container-md">
+          <div class="breadcrumb__container">
+            <ul class="breadcrumb">
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="#" title="главная">Главная </a></li>
+              <li class="breadcrumb__divider">●  </li>
+              <li class="breadcrumb__item"><span class="breadcrumb__link breadcrumb__link--none">О нас</span></li>
+            </ul>
+          </div>
+        </section>
+        <section class="container-sm">
+          <h1 class="title title__content-section">О нас</h1>
+        </section>
+        <section class="container-sm">
+          <div class="textarea">
+            <p>  Всем привет! Меня зовут Стальной шеф (также я известен как Ironchef). Я много путешествовал по миру в поисках лучших продуктов и лучших знаний.</p>
+          </div>
+          <div class="textarea">
+            <p>Все началось с того, что я мечтал быть сильнее и быстрее других, но тренировки не давали нужных результатов. И я задумался: почему? Я отправился в кругосветное путешествие: медитировал в ашрамах, сражался с шаолиньскими монахами, уничтожил популяцию драконов в Средиземье, но так и не нашел ответа. Я практически отчаялся, когда встретил одну бабульку в стамбульском порту, и она сказала, что...</p>
+          </div>
+        </section>
+        <section class="container-xs">
+          <div class="editable-part">
+            <h2>...“Ты — это то, что ты ешь”.</h2>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+            <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка.</p>
+            <p>Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой.</p>
+          </div>
+        </section>
+        <section class="container-xs">
+          <div class="editable-part">
+            <h2>Наша философия</h2>
+            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+            <p>Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Вскоре ему повстречался коварный составитель    </p>
+          </div>
+        </section>
+        <section class="promo promo--adv-5">
+          <div class="container-sm">
+            <div class="promo__inner">
+              <div class="promo__text">   <span class="promo__name">IRONCHEF</span>
+                <p class="promo__info">
+                     Не нужно считать калории, бегать по магазинам, готовить еду <br>  Осталось только выбрать!</p>
+              </div>
+            </div><a class="button button--red button--text-uppercase" href="../obchee-menu.html">смотреть меню</a>
+          </div>
+        </section>
+      </div>
       <footer class="footer">
         <div class="footer__top">
           <div class="container-md">
@@ -48,34 +134,34 @@
               <div class="footer-menu"> 
                 <p class="footer__text">СПОРТИВНОЕ МЕНЮ</p>
                 <ul class="footer__links">
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Стальной качок</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Гора мышц</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Рельеф</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Супер-сушка</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Тело мечты</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../stalnoi-kachok.html">Стальной качок</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../gora-myuhc.html">Гора мышц</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../relief.html">Рельеф</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../super-suhka.html">Супер-сушка</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../telo-mechty.html">Тело мечты</a></li>
                 </ul>
               </div>
               <div class="footer-menu">
                 <p class="footer__text">МЕНЮ ЗДОРОВОГО ПИТАНИЯ </p>
                 <ul class="footer__links">
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">БыстроSlim (Ж)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">БыстроSlim (Ж)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Еда для жизни (Ж)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Еда для жизни (М)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Зеленый</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../bystroslim-zh.html">БыстроSlim (Ж)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../bystroslim-m.html">БыстроSlim (M)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../eda-dlya-zhizni-zh.html">Еда для жизни (Ж)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../eda-dlya-zhizni-m.html">Еда для жизни (М)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../zelenyi.html">Зеленый</a></li>
                 </ul>
               </div>
               <div class="footer-menu">          
                 <p class="footer__text">КАК ЭТО РАБОТАЕТ </p>
                 <ul class="footer__links">
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Блог стального шефа</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Отзывы клиентов</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../blog.html">Блог стального шефа</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../otzyvy.html">Отзывы клиентов</a></li>
                 </ul>
               </div>
               <div class="footer-contacts">
-                <div class="phone phone--footer"><span class="phone__number phone__number--footer">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#">Обратный звонок</a></div>
+                <div class="phone phone--footer"><span class="phone__number phone__number--footer">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#" data-toggle="modal" data-target="#modal-order">Обратный звонок</a></div>
               </div>
-              <div class="footer__social-icons"><a class="social-icons__link" href="#"> <i class="fa fa-facebook" aria-hidden></i></a><a class="social-icons__link" href="#">   <i class="fa fa-vk" aria-hidden></i></a><a class="social-icons__link" href="#">   <i class="fa fa-instagram" aria-hidden></i></a><a class="social-icons__link" href="#"><i class="fa fa-twitter" aria-hidden></i></a></div>
+              <div class="footer__social-icons"><a class="social-icons__link" href="javascript:void(0)"> <i class="fa fa-facebook" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)">   <i class="fa fa-vk" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)">   <i class="fa fa-instagram" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden></i></a></div>
             </div>
           </div>
         </div>
@@ -86,6 +172,10 @@
         </div>
       </footer>
     </div>
+    <script src="bootstrap/tether.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>

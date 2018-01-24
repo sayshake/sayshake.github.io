@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <title>sportivnoe-menu</title>
+  </head>
+  <body>
+    <div class="page-wrap">
+      <div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">Оставьте ваши контактные данные и мы вам перезвоним!</div>
+              <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true">     </i></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="modal-container">
+                  <div class="modal-container__element"><span class="input">
+                      <label class="input__label"><i>  *</i>  Представьтесь</label>
+                      <input class="input__texted" type="text" name="name" placeholder="представьтесь" tabindex="1" required></span></div>
+                  <div class="modal-container__element"><span class="input">
+                      <label class="input__label"> <i>  *</i>  Ваш телефон</label>
+                      <input class="input__texted" type="tel" name="phone" placeholder="ваш телефон" tabindex="2" required></span></div>
+                  <div class="modal-container__element">   <span class="input">
+                      <label class="input__label">Ваш email</label>
+                      <input class="input__texted" type="email" name="email" placeholder="ваш email" tabindex="3" required></span></div>
+                  <div class="modal-container__element">   <span class="input">
+                      <label class="input__label">Комментарий</label>
+                      <textarea class="input__texted input__texted--textarea" type="text"></textarea></span></div>
+                </div>
+              </form><a class="button button--red button--text-uppercase" href="#">перезвоните мне</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modal-answer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">Спасибо</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times      </span></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="modal-container">
+                  <div class="edit-area">
+                    <p>Мы Вам перезвоним </p>
+                  </div>
+                </div>
+              </form><a class="button button--red button--text-uppercase" href="#" data-dismiss="modal">закрыть                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <section class="header--dynamic">
+          <div class="container-md">
+            <div class="header__row">
+              <div class="header__menu">
+                <nav class="nav">
+                  <li class="dropdown"><a class="nav__link" href="javascript:void(0)">Меню<span class="caret"></span></a>
+                    <div class="dropdown-content"><a class="dropdown__link" href="../obchee-menu.html">Общее меню</a><a class="dropdown__link" href="../sportivnoe-menu.html">Спортивный рацион</a><a class="dropdown__link" href="../zdorovoe-menu.html">Меню здорового питания</a></div>
+                  </li><a class="nav__link" href="../kak-eto-rabotaet.html">Как это работает</a>
+                  <li class="dropdown"><a class="nav__link" href="javascript:void(0)">о нас<span class="caret"></span></a>
+                    <div class="dropdown-content"><a class="dropdown__link" href="../o-nas.html">О нас </a><a class="dropdown__link" href="../otzyvy.html">Отзывы  </a></div>
+                  </li><a class="nav__link" href="../blog.html">блог</a><a class="nav__link" href="../kontakty.html">Контакты</a>
+                </nav>
+              </div>
+              <div class="header__phone">
+                <div class="phone"><span class="phone__number">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#" data-toggle="modal" data-target="#modal-order">Обратный звонок</a></div>
+              </div>
+              <div class="header__logo">   <a class="logo" href="../index.html"><span class="logo__picture"></span></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="container-md">
+          <div class="breadcrumb__container">
+            <ul class="breadcrumb">
+              <li class="breadcrumb__item"><a class="breadcrumb__link" href="#" title="главная">Главная </a></li>
+              <li class="breadcrumb__divider">●  </li>
+              <li class="breadcrumb__item"><span class="breadcrumb__link breadcrumb__link--none">Спортивное меню</span></li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="container-sm header-kachok">
+            <div class="row">
+              <div class="row__item">
+                <h1 class="title title__content-section">Еда для жизни (Ж) </h1>
+              </div>
+              <div class="row__item left">   
+                <div class="icon icon-dumbell"></div>
+                <div class="icon icon-female"></div>
+                <div class="icon icon-male"></div>
+              </div>
+              <div class="row__item"> <a class="button button--red button--text-uppercase" href="../obchee-menu.html">Заказать меню</a></div>
+            </div><span>[4000 ккал]        </span>
+          </div>
+        </section>
+        <div class="container-sm">
+          <div class="textarea">
+            <p>Рацион прекрасно сочетается с интенсивными физическими нагрузками. Лучше всего он подойдет женщинам для набора мышечной массы и активно худеющим мужчинам. Увеличение доли белка в рационе помогает получить максимальный эффект от тренировок.</p>
+          </div>
+        </div>
+        <section class="about border-top">
+          <ul class="about__list">
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-burger icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Программы питания на любой вкус</h3>
+                <p class="about__description"> с учетом ваших пожеланий, особенностей, целей и образа жизни </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-flower icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Полезно, вкусно, разнообразно</h3>
+                <p class="about__description"> Вкусно, как в ресторане! Полезно, как мамины брокколи! Все рационы составлены диетологом </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-car icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Доставка в любое время</h3>
+                <p class="about__description"> Вам некогда принять курьера днем? Мы доставляем еду 24 часа в сутки!</p>
+              </div>
+            </li>
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-dish icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Без забот</h3>
+                <p class="about__description"> Мы привозим готовую еду — вам остается только разогреть!</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <div class="eat-mainbg eat-mainbg--health">
+          <div class="container-sm">
+            <div class="eat-mainbg__offset">
+              <div class="icon icon-recommend"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-sm">
+          <div class="editable-part editable-kachok">
+            <h2>5-разовое питание</h2>
+            <p>Пятиразовое питание лучше всего подходит для занимающихся спортом. </p>
+            <h2>Разнообразно!</h2>
+            <p>Блюда не повторяются. </p>
+            <h2>Результат за неделю</h2>
+            <p>Уже через несколько дней вы заметите, как питание положительно влияет на ваше тело.</p>
+          </div>
+        </div>
+        <section class="container-md">               
+          <div class="service"> 
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service__header"><span class="service__header-text">Пробный день</span></div>
+                <div class="service__body"><span class="service__body-text">Знакомство с Ironchef по специальной цене</span><span class="service__body-price"> <i class="body-price--range">от </i> 1500 <i class="body-price--range">руб.</i></span><span class="service__body-text">за день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+              </div>
+              <div class="service-item">
+                <div class="service__header"><span class="service__header-text">Разовый</span></div>
+                <div class="service__body"><span class="service__body-text"> Цена при заказе блюд на 1-7 дней</span><span class="service__body-price"> <i class="body-price--range">от</i> 2500 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+              </div>
+              <div class="service-item">
+                <div class="service__header"><span class="service__header-text">Подписка</span></div>
+                <div class="service__body"><span class="service__body-text">При заказе блюд на 3 и более недель</span><span class="service__body-price"> <i class="body-price--range">от</i> 2500 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+              </div>
+              <div class="service-item">
+                <div class="service__header"><span class="service__header-text">Месячный</span></div>
+                <div class="service__body"><span class="service__body-text">При заказе блюд на месяц и более</span><span class="service__body-price"> <i class="body-price--range">от</i> 1800 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="eat-secondarybg">
+          <div class="container-sm">
+            <div class="goods__text">   <span class="goods__name">Пример меню на первую неделю</span></div>
+            <div class="eat-secondary__menu">       
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Понедельник</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Вторник</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="container-sm">
+            <div class="tab-content">   
+              <div class="tab-pane fade in active" id="panel1" role="tabpanel"><span class="tag tag-plate tag-plate-secondary">первая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">вторая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">третья еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">четвертая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">пятая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="panel2" role="tabpanel"><span class="tag tag-plate tag-plate-secondary">первая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет обыкновенный</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">250</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">110</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">30г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">9г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">5г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">вторая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">третья еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">четвертая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div><span class="tag tag-plate tag-plate-secondary">пятая еда</span>
+                <div class="individual-programm__decription">
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="editable-part">
+                      <h2> Омлет с лососем и сыром</h2>
+                      <p>Питательный завтрак со средиземноморским акцентом и удивительными свойствами: «хорошие» жиры Омега-3 и Омега-6, содержащиеся в лососе, защищают мозг от перенапряжения.</p>
+                      <p><strong> Ингредиенты:</strong></p>
+                      <p>лосось, яйцо, помидоры черри, молоко, сыр моцарелла, базилик, черный перец, соль с пониженным содержанием натрия.    </p>
+                    </div>
+                  </div>
+                  <div class="individual-programm__decription-col decription-col--right">
+                    <div class="energy-table">
+                      <div class="energy-table__item"><span class="energy-table__item--up">200</span><span class="energy-table__item--down">грамм</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">100</span><span class="energy-table__item--down">ккал</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">28г</span><span class="energy-table__item--down">белки</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">8г</span><span class="energy-table__item--down">жиры</span></div>
+                      <div class="energy-table__item"><span class="energy-table__item--up">3г</span><span class="energy-table__item--down">углев. </span></div>
+                    </div>
+                    <div class="energy-img"><img class="energy-img__picture" src="images/energy-food.png" alt="picture"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="promo promo--adv-4">
+          <div class="container-sm">
+            <div class="promo__inner">
+              <div class="promo__text">   <span class="promo__name">Какая гадость эта ваша заливная рыба!</span>
+                <p class="promo__info">
+                     Вам не нравятся какие-либо продукты в рационе? Нет проблем!<br>  Сообщите нам свои предпочтения, и мы скорректируем<br>  рацион специально для вас!</p>
+              </div>
+            </div><a class="button button--red button--text-uppercase" href="../obchee-menu.html">Заказать рацион                 </a>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="container-md">
+            <div class="footer-row">
+              <div class="footer-logo"><a class="logo" href="../index.html"><span class="logo__picture"></span></a></div>
+              <div class="footer-menu"> 
+                <p class="footer__text">СПОРТИВНОЕ МЕНЮ</p>
+                <ul class="footer__links">
+                  <li class="footer__social"><a class="footer__social-link" href="../stalnoi-kachok.html">Стальной качок</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../gora-myuhc.html">Гора мышц</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../relief.html">Рельеф</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../super-suhka.html">Супер-сушка</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../telo-mechty.html">Тело мечты</a></li>
+                </ul>
+              </div>
+              <div class="footer-menu">
+                <p class="footer__text">МЕНЮ ЗДОРОВОГО ПИТАНИЯ </p>
+                <ul class="footer__links">
+                  <li class="footer__social"><a class="footer__social-link" href="../bystroslim-zh.html">БыстроSlim (Ж)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../bystroslim-m.html">БыстроSlim (M)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../eda-dlya-zhizni-zh.html">Еда для жизни (Ж)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../eda-dlya-zhizni-m.html">Еда для жизни (М)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../zelenyi.html">Зеленый</a></li>
+                </ul>
+              </div>
+              <div class="footer-menu">          
+                <p class="footer__text">КАК ЭТО РАБОТАЕТ </p>
+                <ul class="footer__links">
+                  <li class="footer__social"><a class="footer__social-link" href="../blog.html">Блог стального шефа</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../otzyvy.html">Отзывы клиентов</a></li>
+                </ul>
+              </div>
+              <div class="footer-contacts">
+                <div class="phone phone--footer"><span class="phone__number phone__number--footer">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#" data-toggle="modal" data-target="#modal-order">Обратный звонок</a></div>
+              </div>
+              <div class="footer__social-icons"><a class="social-icons__link" href="javascript:void(0)"> <i class="fa fa-facebook" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)">   <i class="fa fa-vk" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)">   <i class="fa fa-instagram" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden></i></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container-md">
+            <div class="footer__copy"> Разработка сайта  sayshake</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="bootstrap/tether.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -4,319 +4,369 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <title>Iron Chief</title>
   </head>
   <body>
     <div class="page-wrap">
-      <section class="header">
-        <div class="container-md">
-          <div class="header__row">
-            <div class="header__menu">
-              <nav class="nav">
-                <li class="dropdown"><a class="nav__link" href="javascript:void(0)">Меню<span class="caret"></span></a>
-                  <div class="dropdown-content"><a class="dropdown__link" href="../obchee-menu.html">Общее меню</a><a class="dropdown__link" href="../sportivnoe-menu.html">Спортивный рацион</a><a class="dropdown__link" href="../zdorovoe-menu.html">Меню здорового питания</a></div>
-                </li><a class="nav__link" href="../kak-eto-rabotaet.html">Как это работает</a>
-                <li class="dropdown"><a class="nav__link" href="javascript:void(0)">о нас<span class="caret"></span></a>
-                  <div class="dropdown-content"><a class="dropdown__link" href="../o-nas.html">О нас </a><a class="dropdown__link" href="../otzyvy.html">Отзывы  </a></div>
-                </li><a class="nav__link" href="../blog.html">блог</a><a class="nav__link" href="../kontakty.html">Контакты</a>
-              </nav>
+      <div class="modal fade" id="modal-order" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">Оставьте ваши контактные данные и мы вам перезвоним!</div>
+              <button class="modal-close" type="button" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true">     </i></button>
             </div>
-            <div class="header__phone">
-              <div class="phone"><span class="phone__number">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="javascript:void(0)">Обратный звонок</a></div>
-            </div>
-            <div class="header__logo">   <a class="logo" href="../index.html"><span class="logo__picture"></span></a></div>
-          </div>
-        </div>
-      </section>
-      <section class="about">
-        <ul class="about__list">
-          <li class="about__item">
-            <div class="about__icon-container">
-              <div class="icon icon-burger icon-container--size"></div>
-            </div>
-            <div class="about__text-container">
-              <h3 class="about__header">Программы питания на любой вкус</h3>
-              <p class="about__description"> с учетом ваших пожеланий, особенностей, целей и образа жизни </p>
-            </div>
-          </li>
-          <li class="about__item">
-            <div class="about__icon-container">
-              <div class="icon icon-flower icon-container--size"></div>
-            </div>
-            <div class="about__text-container">
-              <h3 class="about__header">Полезно, вкусно, разнообразно</h3>
-              <p class="about__description"> Вкусно, как в ресторане! Полезно, как мамины брокколи! Все рационы составлены диетологом </p>
-            </div>
-          </li>
-          <li class="about__item">
-            <div class="about__icon-container">
-              <div class="icon icon-car icon-container--size"></div>
-            </div>
-            <div class="about__text-container">
-              <h3 class="about__header">Доставка в любое время</h3>
-              <p class="about__description"> Вам некогда принять курьера днем? Мы доставляем еду 24 часа в сутки!</p>
-            </div>
-          </li>
-          <li class="about__item">
-            <div class="about__icon-container">
-              <div class="icon icon-dish icon-container--size"></div>
-            </div>
-            <div class="about__text-container">
-              <h3 class="about__header">Без забот</h3>
-              <p class="about__description"> Мы привозим готовую еду — вам остается только разогреть!     </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="aboutUs">
-        <div class="container-sm">
-          <div class="aboutUs__container-title">
-            <div class="aboutUs__title"></div><span class="aboutUs__text">спонсор вашего сободного времени</span>
-          </div>
-          <div class="aboutUs__decription">
-            <div class="aboutUs__decription-col">
-              <h3 class="aboutUs__decription-title">Что такое Ironchef?</h3>
-              <p class="aboutUs__decription-text">Мы — команда профессиональных поваров и спортсменов, объединённая идеей здорового образа жизни и правильного питания.</p>
-            </div>
-            <div class="aboutUs__decription-col">
-              <h3 class="aboutUs__decription-title">Что мы делаем?</h3>
-              <p class="aboutUs__decription-text">Готовим вкусные и полезные блюда, разработанные специально для тех, кто хочет питаться правильно и с удовольствием, но не хочет тратить всё свободное время на приготовление еды.</p>
+            <div class="modal-body">
+              <form>
+                <div class="modal-container">
+                  <div class="modal-container__element"><span class="input">
+                      <label class="input__label"><i>  *</i>  Представьтесь</label>
+                      <input class="input__texted" type="text" name="name" placeholder="представьтесь" tabindex="1" required></span></div>
+                  <div class="modal-container__element"><span class="input">
+                      <label class="input__label"> <i>  *</i>  Ваш телефон</label>
+                      <input class="input__texted" type="tel" name="phone" placeholder="ваш телефон" tabindex="2" required></span></div>
+                  <div class="modal-container__element">   <span class="input">
+                      <label class="input__label">Ваш email</label>
+                      <input class="input__texted" type="email" name="email" placeholder="ваш email" tabindex="3" required></span></div>
+                  <div class="modal-container__element">   <span class="input">
+                      <label class="input__label">Комментарий</label>
+                      <textarea class="input__texted input__texted--textarea" type="text"></textarea></span></div>
+                </div>
+              </form><a class="button button--red button--text-uppercase" href="#">перезвоните мне</a>
             </div>
           </div>
         </div>
-      </section>
-      <section class="hero">
-        <div class="container-sm title">
-          <h1 class="title__header">Спортивное меню</h1>
-          <p class="title__text">Вы регулярно тренируетесь в спортзале или занимаетесь каким-либо видом спорта? Сбалансированные рационы 5-разового питания помогут вам получитьмаксимальный результат от тренировок!</p>
-        </div>
-        <div class="container-md">   
-          <ul class="offer__list">
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал]  </span></div><img class="offer__picture" src="images/man3.jpg" alt="picture">
-                </div>
-                <div class="button button--red button--text-uppercase button--long" href="#">cтальной качок</div></a></li>
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал]</span></div><img class="offer__picture" src="images/man1.jpg" alt="picture">
-                </div>
-                <div class="button button--red button--text-uppercase button--long" href="#">гора мыщц</div></a></li>
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал]</span></div><img class="offer__picture" src="images/man2.jpg" alt="picture">
-                </div>
-                <div class="button button--red button--text-uppercase button--long" href="#">рельеф</div></a></li>
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/woman1.jpg" alt="picture">
-                </div>
-                <div class="button button--red button--text-uppercase button--long" href="#">супер сушка</div></a></li>
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/woman2.jpg" alt="picture">
-                </div>
-                <div class="button button--red button--text-uppercase button--long" href="#">тело мечты</div></a></li>
-          </ul>
-        </div>
-      </section>
-      <section class="individual-programm">
-        <div class="container-sm">
-          <div class="individual-programm__decription">
-            <div class="individual-programm__decription-col decription-col--left">
-              <p class="individual-programm__decription-text">Наши специалисты составят вам индивидуальную программу питания с учетом ваших пожеланий, особенностей, целей и образа жизни. Ironchef подобрал для вас лучших диетологов всея Руси. Несколько слов о наших диетологах. Наши специалисты составят вам индивидуальную программу питания с учетом ваших пожеланий, особенностей, целей и образа жизни. Ironchef подобрал для вас лучших диетологов всея Руси. Несколько слов о наших диетологах. Наши специалисты составят вам индивидуальную программу питания с учетом ваших пожеланий, особенностей, целей и образа жизни. Ironchef подобрал для вас лучших диетологов всея Руси.</p>
+      </div>
+      <div class="modal fade" id="modal-answer" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modal-title" id="exampleModalLabel">Спасибо</div>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times      </span></button>
             </div>
-            <div class="individual-programm__decription-col decription-col--right">
-              <h3 class="individual-programm__decription-title">ИНДИВИДУАЛЬНАЯ ПРОГРАММА ПИТАНИЯ</h3>
-              <ul class="individual-programm__list">
-                <li class="individual-programm__item">
-                  <div class="individual-programm__icon-container">
-                    <div class="icon icon-dumbell"></div>
+            <div class="modal-body">
+              <form>
+                <div class="modal-container">
+                  <div class="edit-area">
+                    <p>Мы Вам перезвоним </p>
                   </div>
-                  <div class="individual-programm__text-container">
-                    <p class="individual-programm__content"> для спортсменов</p>
-                  </div>
-                </li>
-                <li class="individual-programm__item">
-                  <div class="individual-programm__icon-container">
-                    <div class="icon icon-nose"></div>
-                  </div>
-                  <div class="individual-programm__text-container">
-                    <p class="individual-programm__content"> для аллергиков</p>
-                  </div>
-                </li>
-                <li class="individual-programm__item">
-                  <div class="individual-programm__icon-container">
-                    <div class="icon icon-stomach"></div>
-                  </div>
-                  <div class="individual-programm__text-container">
-                    <p class="individual-programm__content"> при заболеваниях желудочно-кишечного тракта</p>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </form><a class="button button--red button--text-uppercase" href="#" data-dismiss="modal">закрыть                </a>
             </div>
           </div>
-          <div class="worker"> 
-            <div class="worker__inner">
-              <div class="worker__image"><img class="worker__picture" src="images/dietolog-1.png" alt="picture"></div>
-              <div class="worker__text">   <span class="worker__name">Сытоедова Снежана,</span>
-                <p class="worker__info"></p>диетолог института питания РАМН, <br>доктор медицинских наук
+        </div>
+      </div>
+      <div class="page-content">
+        <section class="header">
+          <div class="container-md">
+            <div class="header__row">
+              <div class="header__menu">
+                <nav class="nav">
+                  <li class="dropdown"><a class="nav__link" href="javascript:void(0)">Меню<span class="caret"></span></a>
+                    <div class="dropdown-content"><a class="dropdown__link" href="../obchee-menu.html">Общее меню</a><a class="dropdown__link" href="../sportivnoe-menu.html">Спортивный рацион</a><a class="dropdown__link" href="../zdorovoe-menu.html">Меню здорового питания</a></div>
+                  </li><a class="nav__link" href="../kak-eto-rabotaet.html">Как это работает</a>
+                  <li class="dropdown"><a class="nav__link" href="javascript:void(0)">о нас<span class="caret"></span></a>
+                    <div class="dropdown-content"><a class="dropdown__link" href="../o-nas.html">О нас </a><a class="dropdown__link" href="../otzyvy.html">Отзывы  </a></div>
+                  </li><a class="nav__link" href="../blog.html">блог</a><a class="nav__link" href="../kontakty.html">Контакты</a>
+                </nav>
               </div>
-            </div><a class="button button--green button--text-uppercase" href="#">Получить бесплатную консультацию диетолога            </a>
+              <div class="header__phone">
+                <div class="phone"><span class="phone__number">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#" data-toggle="modal" data-target="#modal-order">Обратный звонок</a></div>
+              </div>
+              <div class="header__logo">   <a class="logo" href="../index.html"><span class="logo__picture"></span></a></div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="health">
-        <div class="container-sm title">
-          <h1 class="title__header">Меню здорового питания</h1>
-          <p class="title__text">Мы готовим для людей, у кого отсутствует физическая активность, например, для работающих в офисе. Это оптимальные рационы 3-разового здорового питаниядля достижения ваших целей — похудения или поддержания идеального веса.</p>
-        </div>
-        <div class="container-md"> 
-          <ul class="offer__list">
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food3.jpg" alt="picture">
-                </div>
-                <div class="button button--green button--text-uppercase button--long" href="#">cтальной качок</div></a></li>
-            <li class="offer__item">
-              <div class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food4.jpg" alt="picture">
-                </div>
-                <div class="button button--green button--text-uppercase button--long" href="#">гора мыщц</div>
+        </section>
+        <section class="about">
+          <ul class="about__list">
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-burger icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Программы питания на любой вкус</h3>
+                <p class="about__description"> с учетом ваших пожеланий, особенностей, целей и образа жизни </p>
               </div>
             </li>
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food2.jpg" alt="picture">
-                </div>
-                <div class="button button--green button--text-uppercase button--long" href="#">рельеф</div></a></li>
-            <li class="offer__item"><a class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food1.jpg" alt="picture">
-                </div>
-                <div class="button button--green button--text-uppercase button--long" href="#">супер сушка</div></a></li>
-            <li class="offer__item">
-              <div class="offer__item-container">
-                <div class="offer__image">
-                  <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food5.jpg" alt="picture">
-                </div>
-                <div class="button button--green button--text-uppercase button--long" href="#">тело мечты</div>
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-flower icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Полезно, вкусно, разнообразно</h3>
+                <p class="about__description"> Вкусно, как в ресторане! Полезно, как мамины брокколи! Все рационы составлены диетологом </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-car icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Доставка в любое время</h3>
+                <p class="about__description"> Вам некогда принять курьера днем? Мы доставляем еду 24 часа в сутки!</p>
+              </div>
+            </li>
+            <li class="about__item">
+              <div class="about__icon-container">
+                <div class="icon icon-dish icon-container--size"></div>
+              </div>
+              <div class="about__text-container">
+                <h3 class="about__header">Без забот</h3>
+                <p class="about__description"> Мы привозим готовую еду — вам остается только разогреть!     </p>
               </div>
             </li>
           </ul>
-        </div>
-      </section>
-      <section class="promo">
-        <div class="container-xs">
-          <div class="promo__inner">
-            <div class="promo__text">   <span class="promo__name">Хотите сами составить себе рацион?</span>
-              <p class="promo__info">Вам нужен только завтрак и ужин, потому что обедаете Вы на работе? Вы с удовольствием готовите себе ужины, но заниматься завтраком с утра нет сил? У Ironchef вы можете заказать отдельные приемы пищи или отдельные блюда.</p>
+        </section>
+        <section class="aboutUs">
+          <div class="container-sm">
+            <div class="aboutUs__container-title">
+              <div class="aboutUs__title"></div><span class="aboutUs__text">спонсор вашего сободного времени</span>
             </div>
-          </div><a class="button button--red button--text-uppercase" href="../obchee-menu.html">смотреть меню</a>
-        </div>
-      </section>
-      <section class="goods">   
-        <div class="container-sm">
-          <div class="goods__inner">
-            <div class="goods__text">   <span class="goods__name">Что я получу, питаясь у IRONCHEF?</span></div>
-            <ul class="goods__list">
-              <li class="goods__item">
-                <div class="goods__icon-container">
-                  <div class="icon icon-arm"></div>
+            <div class="aboutUs__decription">
+              <div class="aboutUs__decription-col">
+                <h3 class="aboutUs__decription-title">Что такое Ironchef?</h3>
+                <p class="aboutUs__decription-text">Мы — команда профессиональных поваров и спортсменов, объединённая идеей здорового образа жизни и правильного питания.</p>
+              </div>
+              <div class="aboutUs__decription-col">
+                <h3 class="aboutUs__decription-title">Что мы делаем?</h3>
+                <p class="aboutUs__decription-text">Готовим вкусные и полезные блюда, разработанные специально для тех, кто хочет питаться правильно и с удовольствием, но не хочет тратить всё свободное время на приготовление еды.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hero">
+          <div class="container-sm title">
+            <h1 class="title__header">Спортивное меню</h1>
+            <p class="title__text">Вы регулярно тренируетесь в спортзале или занимаетесь каким-либо видом спорта? Сбалансированные рационы 5-разового питания помогут вам получитьмаксимальный результат от тренировок!</p>
+          </div>
+          <div class="container-md">   
+            <ul class="offer__list">
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал]  </span></div><img class="offer__picture" src="images/man3.jpg" alt="picture">
+                  </div>
+                  <div class="button button--red button--text-uppercase button--long" href="../stalnoi-kachok.html">cтальной качок</div></a></li>
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал]</span></div><img class="offer__picture" src="images/man1.jpg" alt="picture">
+                  </div>
+                  <div class="button button--red button--text-uppercase button--long" href="../gora-myuhc.html">гора мыщц</div></a></li>
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал]</span></div><img class="offer__picture" src="images/man2.jpg" alt="picture">
+                  </div>
+                  <div class="button button--red button--text-uppercase button--long" href="../relief.html">рельеф</div></a></li>
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/woman1.jpg" alt="picture">
+                  </div>
+                  <div class="button button--red button--text-uppercase button--long" href="../super-suhka.html">супер сушка</div></a></li>
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/woman2.jpg" alt="picture">
+                  </div>
+                  <div class="button button--red button--text-uppercase button--long" href="../telo-mechty.html">тело мечты</div></a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="individual-programm">
+          <div class="container-sm">
+            <div class="individual-programm__decription">
+              <div class="individual-programm__decription-col decription-col--left">
+                <p class="individual-programm__decription-text">Наши специалисты составят вам индивидуальную программу питания с учетом ваших пожеланий, особенностей, целей и образа жизни. Ironchef подобрал для вас лучших диетологов всея Руси. Несколько слов о наших диетологах. Наши специалисты составят вам индивидуальную программу питания с учетом ваших пожеланий, особенностей, целей и образа жизни. Ironchef подобрал для вас лучших диетологов всея Руси. Несколько слов о наших диетологах. Наши специалисты составят вам индивидуальную программу питания с учетом ваших пожеланий, особенностей, целей и образа жизни. Ironchef подобрал для вас лучших диетологов всея Руси.</p>
+              </div>
+              <div class="individual-programm__decription-col decription-col--right">
+                <h3 class="individual-programm__decription-title">ИНДИВИДУАЛЬНАЯ ПРОГРАММА ПИТАНИЯ</h3>
+                <ul class="individual-programm__list">
+                  <li class="individual-programm__item">
+                    <div class="individual-programm__icon-container">
+                      <div class="icon icon-dumbell"></div>
+                    </div>
+                    <div class="individual-programm__text-container">
+                      <p class="individual-programm__content"> для спортсменов</p>
+                    </div>
+                  </li>
+                  <li class="individual-programm__item">
+                    <div class="individual-programm__icon-container">
+                      <div class="icon icon-nose"></div>
+                    </div>
+                    <div class="individual-programm__text-container">
+                      <p class="individual-programm__content"> для аллергиков</p>
+                    </div>
+                  </li>
+                  <li class="individual-programm__item">
+                    <div class="individual-programm__icon-container">
+                      <div class="icon icon-stomach"></div>
+                    </div>
+                    <div class="individual-programm__text-container">
+                      <p class="individual-programm__content"> при заболеваниях желудочно-кишечного тракта</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="worker"> 
+              <div class="worker__inner">
+                <div class="worker__image"><img class="worker__picture" src="images/dietolog-1.png" alt="picture"></div>
+                <div class="worker__text">   <span class="worker__name"> <b>Сытоедова Снежана,</b></span>
+                  <p class="worker__info"></p>диетолог института питания РАМН, <br>доктор медицинских наук
                 </div>
-                <div class="goods__text-container">
-                  <h3 class="goods__header">Спортивный результат</h3>
-                  <p class="goods__description"> Ваши тренировки принесут именно те плоды, на которые вы рассчитываете</p>
+              </div><a class="button button--green button--text-uppercase" href="#">Получить бесплатную консультацию диетолога            </a>
+            </div>
+          </div>
+        </section>
+        <section class="health">
+          <div class="container-sm title">
+            <h1 class="title__header">Меню здорового питания</h1>
+            <p class="title__text">Мы готовим для людей, у кого отсутствует физическая активность, например, для работающих в офисе. Это оптимальные рационы 3-разового здорового питаниядля достижения ваших целей — похудения или поддержания идеального веса.</p>
+          </div>
+          <div class="container-md"> 
+            <ul class="offer__list">
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food3.jpg" alt="picture">
+                  </div>
+                  <div class="button button--green button--text-uppercase button--long" href="../bystroslim-zh.html">БыстроSlim (Ж)</div></a></li>
+              <li class="offer__item">
+                <div class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food4.jpg" alt="picture">
+                  </div>
+                  <div class="button button--green button--text-uppercase button--long" href="../bystroslim-m.html">БыстроSlim (M)</div>
                 </div>
               </li>
-              <li class="goods__item">
-                <div class="goods__icon-container">
-                  <div class="icon icon-women"></div>
-                </div>
-                <div class="goods__text-container">
-                  <h3 class="goods__header">Идеальная фигура</h3>
-                  <p class="goods__description"> Ваше тело с каждм днем будет приближаться к своей лучшей форме </p>
-                </div>
-              </li>
-              <li class="goods__item">
-                <div class="goods__icon-container">
-                  <div class="icon icon-heart"></div>
-                </div>
-                <div class="goods__text-container">
-                  <h3 class="goods__header">Бодрость и здоровье</h3>
-                  <p class="goods__description"> Мы — то, что мы едим. Питаясь здоровой пищей, вы станете сильнее, бодрее и активнее.</p>
-                </div>
-              </li>
-              <li class="goods__item">
-                <div class="goods__icon-container">
-                  <div class="icon icon-clock"></div>
-                </div>
-                <div class="goods__text-container">
-                  <h3 class="goods__header">Свобода</h3>
-                  <p class="goods__description"> Не нужно искать рецепты, ходить по магазинам, считать калории, готовить еду — все уже готово.          </p>
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food2.jpg" alt="picture">
+                  </div>
+                  <div class="button button--green button--text-uppercase button--long" href="../eda-dlya-zhizni-zh.html">Еда для жизни (Ж)</div></a></li>
+              <li class="offer__item"><a class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food1.jpg" alt="picture">
+                  </div>
+                  <div class="button button--green button--text-uppercase button--long" href="../eda-dlya-zhizni-m.html">Еда для жизни (М)</div></a></li>
+              <li class="offer__item">
+                <div class="offer__item-container">
+                  <div class="offer__image">
+                    <div class="offer__item-background"><span class="offer__item-description">[4000ккал] </span></div><img class="offer__picture" src="images/food5.jpg" alt="picture">
+                  </div>
+                  <div class="button button--green button--text-uppercase button--long" href="../zelenyi.html.html">Зеленый</div>
                 </div>
               </li>
             </ul>
-          </div><a class="button button--red button--text-uppercase" href="#">Заказать пробный рацион</a>
-        </div>
-      </section>
-      <section class="work">
-        <div class="container-sm work__head-container">
-          <div class="work__icon-container--header">  
-            <div class="icon icon-ironchief-white"></div>
           </div>
-          <div class="title">
-            <h1 class="title__header">Всего три шага</h1>
-            <p class="title__heading">до идеального питания без забот</p>
+        </section>
+        <section class="promo">
+          <div class="container-xs">
+            <div class="promo__inner">
+              <div class="promo__text">   <span class="promo__name">Хотите сами составить себе рацион?</span>
+                <p class="promo__info">Вам нужен только завтрак и ужин, потому что обедаете Вы на работе? Вы с удовольствием готовите себе ужины, но заниматься завтраком с утра нет сил? У Ironchef вы можете заказать отдельные приемы пищи или отдельные блюда.</p>
+              </div>
+            </div><a class="button button--red button--text-uppercase" href="../obchee-menu.html">смотреть меню</a>
           </div>
-        </div>
-        <div class="container-md">   
-          <ul class="work__list">
-            <li class="work__item">
-              <div class="work__text-container">
-                <h3 class="work__header">Выберите рацион или блюдо</h3>
-                <p class="work__description"> Можно заказать полный рацион спортивного или здорового питания, отдельные блюда или приемы пищи (завтрак, ужин)</p>
-              </div>
-            </li>
-            <li class="work__item">
-              <div class="work__text-container">
-                <h3 class="work__header">Согласуйте детали с нашим оператором</h3>
-                <p class="work__description">Корректируйте рацион при необходимости, выберите удобную схему доставки и оплаты рациона.</p>
-              </div>
-            </li>
-            <li class="work__item">
-              <div class="work__text-container">
-                <h3 class="work__header">Ваша еда уже в пути!</h3>
-                <p class="work__description"> Мы доставляем готовую еду 24 часа в сутки, в любое удобное вам время!</p>
-              </div>
-            </li>
-          </ul>
-          <div class="service"> 
-            <div class="service-list">
-              <div class="service-item">
-                <div class="service__header"><span class="service__header-text">Пробный день</span></div>
-                <div class="service__body"><span class="service__body-text">Знакомство с Ironchef по специальной цене</span><span class="service__body-price"> <i class="body-price--range">от </i> 1500 <i class="body-price--range">руб.</i></span><span class="service__body-text">за день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
-              </div>
-              <div class="service-item">
-                <div class="service__header"><span class="service__header-text">Разовый</span></div>
-                <div class="service__body"><span class="service__body-text"> Цена при заказе блюд на 1-7 дней</span><span class="service__body-price"> <i class="body-price--range">от</i> 2500 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
-              </div>
-              <div class="service-item">
-                <div class="service__header"><span class="service__header-text">Подписка</span></div>
-                <div class="service__body"><span class="service__body-text">При заказе блюд на 3 и более недель</span><span class="service__body-price"> <i class="body-price--range">от</i> 2500 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
-              </div>
-              <div class="service-item">
-                <div class="service__header"><span class="service__header-text">Месячный</span></div>
-                <div class="service__body"><span class="service__body-text">При заказе блюд на месяц и более</span><span class="service__body-price"> <i class="body-price--range">от</i> 1800 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+        </section>
+        <section class="goods">   
+          <div class="container-sm">
+            <div class="goods__inner">
+              <div class="goods__text">   <span class="goods__name">Что я получу, питаясь у IRONCHEF?</span></div>
+              <ul class="goods__list">
+                <li class="goods__item">
+                  <div class="goods__icon-container">
+                    <div class="icon icon-arm"></div>
+                  </div>
+                  <div class="goods__text-container">
+                    <h3 class="goods__header">Спортивный результат</h3>
+                    <p class="goods__description"> Ваши тренировки принесут именно те плоды, на которые вы рассчитываете</p>
+                  </div>
+                </li>
+                <li class="goods__item">
+                  <div class="goods__icon-container">
+                    <div class="icon icon-women"></div>
+                  </div>
+                  <div class="goods__text-container">
+                    <h3 class="goods__header">Идеальная фигура</h3>
+                    <p class="goods__description"> Ваше тело с каждм днем будет приближаться к своей лучшей форме </p>
+                  </div>
+                </li>
+                <li class="goods__item">
+                  <div class="goods__icon-container">
+                    <div class="icon icon-heart"></div>
+                  </div>
+                  <div class="goods__text-container">
+                    <h3 class="goods__header">Бодрость и здоровье</h3>
+                    <p class="goods__description"> Мы — то, что мы едим. Питаясь здоровой пищей, вы станете сильнее, бодрее и активнее.</p>
+                  </div>
+                </li>
+                <li class="goods__item">
+                  <div class="goods__icon-container">
+                    <div class="icon icon-clock"></div>
+                  </div>
+                  <div class="goods__text-container">
+                    <h3 class="goods__header">Свобода</h3>
+                    <p class="goods__description"> Не нужно искать рецепты, ходить по магазинам, считать калории, готовить еду — все уже готово.          </p>
+                  </div>
+                </li>
+              </ul>
+            </div><a class="button button--red button--text-uppercase" href="#">Заказать пробный рацион</a>
+          </div>
+        </section>
+        <section class="work">
+          <div class="container-sm work__head-container">
+            <div class="work__icon-container--header">  
+              <div class="icon icon-ironchief-white"></div>
+            </div>
+            <div class="title">
+              <h1 class="title__header">Всего три шага</h1>
+              <p class="title__heading">до идеального питания без забот</p>
+            </div>
+          </div>
+          <div class="container-md">   
+            <ul class="work__list">
+              <li class="work__item">
+                <div class="work__text-container">
+                  <h3 class="work__header">Выберите рацион или блюдо</h3>
+                  <p class="work__description"> Можно заказать полный рацион спортивного или здорового питания, отдельные блюда или приемы пищи (завтрак, ужин)</p>
+                </div>
+              </li>
+              <li class="work__item">
+                <div class="work__text-container">
+                  <h3 class="work__header">Согласуйте детали с нашим оператором</h3>
+                  <p class="work__description">Корректируйте рацион при необходимости, выберите удобную схему доставки и оплаты рациона.</p>
+                </div>
+              </li>
+              <li class="work__item">
+                <div class="work__text-container">
+                  <h3 class="work__header">Ваша еда уже в пути!</h3>
+                  <p class="work__description"> Мы доставляем готовую еду 24 часа в сутки, в любое удобное вам время!</p>
+                </div>
+              </li>
+            </ul>
+            <div class="service"> 
+              <div class="service-list">
+                <div class="service-item">
+                  <div class="service__header"><span class="service__header-text">Пробный день</span></div>
+                  <div class="service__body"><span class="service__body-text">Знакомство с Ironchef по специальной цене</span><span class="service__body-price"> <i class="body-price--range">от </i> 1500 <i class="body-price--range">руб.</i></span><span class="service__body-text">за день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+                </div>
+                <div class="service-item">
+                  <div class="service__header"><span class="service__header-text">Разовый</span></div>
+                  <div class="service__body"><span class="service__body-text"> Цена при заказе блюд на 1-7 дней</span><span class="service__body-price"> <i class="body-price--range">от</i> 2500 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+                </div>
+                <div class="service-item">
+                  <div class="service__header"><span class="service__header-text">Подписка</span></div>
+                  <div class="service__body"><span class="service__body-text">При заказе блюд на 3 и более недель</span><span class="service__body-price"> <i class="body-price--range">от</i> 2500 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+                </div>
+                <div class="service-item">
+                  <div class="service__header"><span class="service__header-text">Месячный</span></div>
+                  <div class="service__body"><span class="service__body-text">При заказе блюд на месяц и более</span><span class="service__body-price"> <i class="body-price--range">от</i> 1800 <i class="body-price--range">руб.</i></span><span class="service__body-text">в день</span></div><a class="button button--red button--text-uppercase button--long" href="#">заказать</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <footer class="footer">
         <div class="footer__top">
           <div class="container-md">
@@ -325,34 +375,34 @@
               <div class="footer-menu"> 
                 <p class="footer__text">СПОРТИВНОЕ МЕНЮ</p>
                 <ul class="footer__links">
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Стальной качок</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Гора мышц</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Рельеф</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Супер-сушка</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Тело мечты</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../stalnoi-kachok.html">Стальной качок</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../gora-myuhc.html">Гора мышц</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../relief.html">Рельеф</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../super-suhka.html">Супер-сушка</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../telo-mechty.html">Тело мечты</a></li>
                 </ul>
               </div>
               <div class="footer-menu">
                 <p class="footer__text">МЕНЮ ЗДОРОВОГО ПИТАНИЯ </p>
                 <ul class="footer__links">
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">БыстроSlim (Ж)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">БыстроSlim (Ж)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Еда для жизни (Ж)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Еда для жизни (М)</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Зеленый</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../bystroslim-zh.html">БыстроSlim (Ж)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../bystroslim-m.html">БыстроSlim (M)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../eda-dlya-zhizni-zh.html">Еда для жизни (Ж)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../eda-dlya-zhizni-m.html">Еда для жизни (М)</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../zelenyi.html">Зеленый</a></li>
                 </ul>
               </div>
               <div class="footer-menu">          
                 <p class="footer__text">КАК ЭТО РАБОТАЕТ </p>
                 <ul class="footer__links">
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Блог стального шефа</a></li>
-                  <li class="footer__social"><a class="footer__social-link" href="javascript:void(0)">Отзывы клиентов</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../blog.html">Блог стального шефа</a></li>
+                  <li class="footer__social"><a class="footer__social-link" href="../otzyvy.html">Отзывы клиентов</a></li>
                 </ul>
               </div>
               <div class="footer-contacts">
-                <div class="phone phone--footer"><span class="phone__number phone__number--footer">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#">Обратный звонок</a></div>
+                <div class="phone phone--footer"><span class="phone__number phone__number--footer">+7 (800) 000-00-00</span><a class="button header__button button--red button--text-uppercase" href="#" data-toggle="modal" data-target="#modal-order">Обратный звонок</a></div>
               </div>
-              <div class="footer__social-icons"><a class="social-icons__link" href="#"> <i class="fa fa-facebook" aria-hidden></i></a><a class="social-icons__link" href="#">   <i class="fa fa-vk" aria-hidden></i></a><a class="social-icons__link" href="#">   <i class="fa fa-instagram" aria-hidden></i></a><a class="social-icons__link" href="#"><i class="fa fa-twitter" aria-hidden></i></a></div>
+              <div class="footer__social-icons"><a class="social-icons__link" href="javascript:void(0)"> <i class="fa fa-facebook" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)">   <i class="fa fa-vk" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)">   <i class="fa fa-instagram" aria-hidden></i></a><a class="social-icons__link" href="javascript:void(0)"><i class="fa fa-twitter" aria-hidden></i></a></div>
             </div>
           </div>
         </div>
@@ -363,6 +413,10 @@
         </div>
       </footer>
     </div>
+    <script src="bootstrap/tether.min.js"></script>
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
