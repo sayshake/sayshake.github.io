@@ -11,6 +11,7 @@
   border: 1px solid #ccc;
   margin-bottom:40px;
   border-radius:2px;
+  box-sizing: border-box;
 }
 
  .one table {
@@ -49,6 +50,7 @@
   @media screen and (max-width: 940px),(min-device-width: 768px) and (max-device-width: 1024px) {
     .one{
       border:none;
+      padding: 10px;
     }
     .one table {
       border: 0;
@@ -109,6 +111,8 @@ body {
   border: 1px solid #ccc;
   margin-bottom:40px;
   border-radius:2px;
+  box-sizing: border-box;
+
 }
  .two table {
 /*     border: 1px solid #ccc; */
@@ -144,6 +148,7 @@ body {
   @media screen and (max-width: 940px),(min-device-width: 768px) and (max-device-width: 1024px) {
     .two{
       border:none;
+    padding: 10px;
     }
    .two table {
       border: 0;
