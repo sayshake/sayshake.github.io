@@ -538,7 +538,7 @@ ul {
   width: 24px;
   height: 24px;
   display: block;
-  background-image: url("/img/icons/angle-down.svg");
+  background-image: url("../img/icons/angle-down.svg");
   background-size: 12px 12px;
   background-position: center;
   background-repeat: no-repeat;
@@ -565,18 +565,18 @@ ul {
 }
 
 .ush-payment-icon_yandex {
-  background-image: url("/img/icons/wallet-yandex.png");
+  background-image: url("../img/icons/wallet-yandex.png");
   background-size: 29px 29px;
 }
 
 .ush-payment-icon_fonbet {
   background-color: #012E67;
-  background-image: url("/img/icons/bk-fonbet.png");
+  background-image: url("../img/icons/bk-fonbet.png");
   background-size: 34px 32px;
 }
 
 .ush-payment-icon_qiwi {
-  background-image: url("/img/icons/qiwi_sign.png");
+  background-image: url("../img/icons/qiwi_sign.png");
   background-size: 35px 34px;
 }
 
